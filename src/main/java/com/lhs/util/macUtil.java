@@ -81,7 +81,7 @@ public class macUtil {
 	 */
 	public static boolean verifyMsgMac(String timeStamp, String macKey,String hashAlg, String msg, String msgMac) {
 		String macValue = genMsgMac(timeStamp, macKey, hashAlg, msg);
-		System.err.println(macValue);
+//		System.err.println(macValue);
 		if (macValue.compareTo(msgMac) == 0) {
 			return true;
 		}
